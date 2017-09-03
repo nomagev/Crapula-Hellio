@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# My special Sauce
+*DO-NOT-COMMIT*.*
+
 # C extensions
 *.so
 
