@@ -2,7 +2,6 @@
 CrapulaHellio.py  is  a  simple, prompt-based
 Python-3 written program, to  scan & clean
 news websites to just get the headlines.
-
 '''
 
 __version__ = '0.0.1'
@@ -22,6 +21,7 @@ import urllib.request
 webURL = input("Enter Full URL: ")
 url = webURL
 
+# Create flow to get website (if error, message will be displayed)
 try:
     webHeaders = {}
     webHeaders['User-Agent'] = "Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.27 Safari/537.17"
