@@ -1,6 +1,6 @@
 '''
-CrapulaHellio.py  is  a  simple, prompt-based
-Python-3 written program, to  scan & clean
+CrapulaHellio.py is a simple, prompt-based
+Python-3  written program, to scan & clean
 news websites to just get the headlines.
 '''
 
@@ -24,11 +24,12 @@ except ImportWarning as warning:
     print(str(warning))
     sys.exit()
 
-# Enter URL
-WEB_URL = input("Enter Full URL: ")
-url = WEB_URL
+# Enter URL to fetch from
+WEB_URL = input("Enter Full URL (i.e. www.example.com): ")
+url = "http://" + WEB_URL
 
-# Create flow to get website (if error, message will be displayed)
+# Create flow to get website's HTML Code
+# (if error, message will be displayed)
 try:
     webHeaders = {}
     # pylint: disable=line-too-long
